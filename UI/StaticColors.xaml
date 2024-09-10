@@ -1,0 +1,7 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	    <!-- Buttons Color Theme -->
+    <SolidColorBrush x:Key="CPUb" Color="#FFFD3025"/>
+    <SolidColorBrush x:Key="DevicesLibb" Color="#FF0090FB"/>
+    <SolidColorBrush x:Key="Settingsb" Color="#FF20DB60"/>
+</ResourceDictionary>

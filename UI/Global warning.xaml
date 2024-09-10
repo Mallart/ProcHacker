@@ -1,0 +1,82 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+					xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Buttons -->
+    <SolidColorBrush x:Key="ButtonBackground" Color="#FF007B2C"/>
+    <SolidColorBrush x:Key="ButtonForeGround" Color="#FF00C346"/>
+
+    <!-- Window -->
+
+    <Color x:Key="BorderStop1">#FF00FF59</Color>
+    <Color x:Key="BorderStop2">#FFB2FF00</Color>
+
+    <!-- NavPanel -->
+
+    <Color x:Key="NavPanelStop1">#FF009040</Color>
+    <Color x:Key="NavPanelStop2">#FF00A060</Color>
+    <SolidColorBrush x:Key="NavPanelOverButton">#FF00C070</SolidColorBrush>
+    <SolidColorBrush x:Key="NavPanelActiveButton">#FF50C050</SolidColorBrush>
+
+    <!-- ContentPanel -->
+
+    <Color x:Key="ContentPanelStop1">#FF007020</Color>
+    <Color x:Key="ContentPanelStop2">#FF008030</Color>
+
+    <!-- Text and titles -->
+
+    <SolidColorBrush x:Key="Title1">#FFFFdfcb</SolidColorBrush>
+    <SolidColorBrush x:Key="Text1">#FFABff9C</SolidColorBrush>
+    <SolidColorBrush x:Key="ActiveText1">#FFCCffBB</SolidColorBrush>
+
+    <!-- Buttons -->
+    <Style x:Key="NavButton" TargetType="RadioButton">
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Margin" Value="-5,0,0,5"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="Foreground" Value="{StaticResource Text1}"/>
+        <Setter Property="BorderBrush" Value="Transparent"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border Background="{TemplateBinding Background}" BorderThickness="4,0,0,0" BorderBrush="{TemplateBinding BorderBrush}" CornerRadius="4">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Margin" Value="0,0,0,5"/>
+                <Setter Property="Background" Value="{StaticResource NavPanelOverButton}"/>
+                <Setter Property="Foreground" Value="{StaticResource ActiveText1}"/>
+                <Setter Property="BorderBrush" Value="{Binding Path=Tag, RelativeSource={RelativeSource Self}}"/>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+                <Setter Property="Margin" Value="0,0,0,5"/>
+                <Setter Property="Background" Value="{StaticResource NavPanelActiveButton}"/>
+                <Setter Property="Foreground" Value="{Binding Path=Tag, RelativeSource={RelativeSource Self}}"/>
+                <Setter Property="BorderBrush" Value="{Binding Path=Tag, RelativeSource={RelativeSource Self}}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <!-- Button Icon -->
+
+    <Style x:Key="ButtonIcon" TargetType="Image">
+        <Setter Property="Width"  Value="40"/>
+        <Setter Property="Height" Value="40"/>
+        <Setter Property="Margin" Value="10,0,20,0"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
+
+    <!-- Button Text -->
+
+    <Style x:Key="ButtonText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{Binding Path=Foreground, RelativeSource={RelativeSource AncestorType=RadioButton}}"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Cascadia Code"/>
+        <Setter Property="FontWeight" Value="ExtraBold"/>
+        <Setter Property="FontSize" Value="12"/>
+    </Style>
+</ResourceDictionary>
