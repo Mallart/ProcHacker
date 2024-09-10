@@ -6,7 +6,8 @@ This program is meant to help you change your CPU name in a few clicks. (you don
 
 ## How to do it ?
 
-![image](https://github.com/user-attachments/assets/97899aae-a5dd-47a8-a524-37b5321f089a)
+![image](https://github.com/user-attachments/assets/4b00a9cd-facc-448a-b046-a2aadd1028f8)
+
 
 
 Open the program (ProcHacker.exe) as administrator, under the first button in the main view type your new CPU's name, click on the big button with a pen drawing on a microcontroller, and that's it !
@@ -19,12 +20,13 @@ You can also close the window easily, by scrollwheel-clicking on the window. If 
 That button is used to get and display the *actual* CPU name. Like, how the PC recognize it.
 If you click on it, your *actual* CPU name will display just under that big wen.
 
-![image](https://github.com/user-attachments/assets/c6ca4d13-32c1-48df-887a-7891fdd81ce4)
+![image](https://github.com/user-attachments/assets/dcf748ab-dc19-406f-ae2f-649638acc4f1)
+
 
 
 ## Is it safe ?
 Only 3 antiviruses flag ProcHacker.exe as malicious as an anonymous virus, detected by AI/ It's not malicious at all. If you don't trust me, read the code and compile it yourself.
-*Edit*: Now Windows Defender and Visual Studio tools too refuse to run my program. I'm still trying to fix it.
+*Edit*: Windows Defender prevents the execution of ProcHacker.exe. To run the program, you unfortunately have to exclude the binary executable or the folder containing it.
 
 ## Something to add ?
 Yes ! This app only works on Windows and uses either Microsoft Powershell to interact with the Registry or Reg.exe. If your powershell installation or Windows Registry isn't working properly, maybe the program will encounter problems too.
@@ -32,7 +34,8 @@ Yes ! This app only works on Windows and uses either Microsoft Powershell to int
 ## Let's play !
 It's your time to test ;)
 
-![image](https://github.com/user-attachments/assets/e638cade-19c1-4390-aa89-5c105efd12c7)
+![image](https://github.com/user-attachments/assets/bbb68930-5a56-4fa6-97fc-355eb14e3866)
+
 
 *Oh and yeah, changes made with this program disappear after the computer restarts.*
 
