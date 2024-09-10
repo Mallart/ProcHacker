@@ -6,7 +6,8 @@ This program is meant to help you change your CPU name in a few clicks. (you don
 
 ## How to do it ?
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/423abe97-9a2e-44bd-a425-c090f86054ea)
+![image](https://github.com/user-attachments/assets/97899aae-a5dd-47a8-a524-37b5321f089a)
+
 
 Open the program (ProcHacker.exe) as administrator, under the first button in the main view type your new CPU's name, click on the big button with a pen drawing on a microcontroller, and that's it !
 
@@ -18,10 +19,12 @@ You can also close the window easily, by scrollwheel-clicking on the window. If 
 That button is used to get and display the *actual* CPU name. Like, how the PC recognize it.
 If you click on it, your *actual* CPU name will display just under that big wen.
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/eb15c8d7-034f-4cc7-aebb-b41537db8ac6)
+![image](https://github.com/user-attachments/assets/c6ca4d13-32c1-48df-887a-7891fdd81ce4)
+
 
 ## Is it safe ?
 Only 3 antiviruses flag ProcHacker.exe as malicious as an anonymous virus, detected by AI/ It's not malicious at all. If you don't trust me, read the code and compile it yourself.
+*Edit*: Now Windows Defender and Visual Studio tools too refuse to run my program. I'm still trying to fix it.
 
 ## Something to add ?
 Yes ! This app only works on Windows and uses either Microsoft Powershell to interact with the Registry or Reg.exe. If your powershell installation or Windows Registry isn't working properly, maybe the program will encounter problems too.
@@ -29,7 +32,8 @@ Yes ! This app only works on Windows and uses either Microsoft Powershell to int
 ## Let's play !
 It's your time to test ;)
 
-![image](https://github.com/Linkruste/ProcHacker/assets/74532664/c07ad850-5bbd-47ff-b957-e33012ea1f6f)
+![image](https://github.com/user-attachments/assets/e638cade-19c1-4390-aa89-5c105efd12c7)
+
 *Oh and yeah, changes made with this program disappear after the computer restarts.*
 
 *Currently only available in English*
