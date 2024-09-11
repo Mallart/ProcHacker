@@ -7,13 +7,14 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using ProcHacker.Tabs;
+using ProcHacker.FakeData;
 
 namespace ProcHacker
 {
 	public partial class MainWindow : Window
 	{
-		// It's mine though
-		public const string processorName = "11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz";
+		// Your CPU name
+		public static string processorName = RegistryManager.ReadNoPS(new Key(Key.KeyPath[Key.KeyType.ProcessorName], "ProcessorNameString"));
 		// Folder where the images are stored
 		const string Assets = "/UI/Assets";
 		public List<NavButton> Buttons;
@@ -27,6 +28,10 @@ namespace ProcHacker
 		public MainWindow()
 		{
 			InitializeComponent();
+			// Adds your processorName to your devices library
+			LibManager.UpdateList();
+			if(!LibManager.Contains(processorName))
+				LibManager.Add(processorName);
 			Tabs = new List<Grid>();
 			foreach(Grid _tab in TabContent.Children)
 				Tabs.Add(_tab);

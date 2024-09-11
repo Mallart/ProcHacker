@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace ProcHacker.FakeData
 {
-	internal class LibManager
+	internal static class LibManager
 	{
 		public const char Separator = 'µ';
 		public static List<Processor> Processors { get; private set; } = new List<Processor>();
@@ -68,5 +68,7 @@ namespace ProcHacker.FakeData
 				_result += $"{Separator}{processor.Name}";
 			return _result;
 		}
+
+		public static bool Contains(Processor processor) => Processors.Contains(processor);
 	}
 }
